@@ -1,0 +1,24 @@
+.tiet-hoc {
+    color: red;
+    font-weight: bold;
+}
+
+.background-thoi-gian {
+    background-color: #cacaca;
+}
+
+table {
+    border-collapse: separate !important;
+}
+
+.table thead th {
+    border: none !important;
+}
+
+.table tbody td {
+
+    /* font-weight: normal; */
+    cursor: pointer;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
