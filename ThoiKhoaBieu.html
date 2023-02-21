@@ -340,15 +340,16 @@
 
             <ul>
                 <li>
-                    <a href="#" title="Trang chủ"><i class="fa fa-lg fa-fw fa-home"></i> <span class="">Trang
+                    <a href="#" title="Trang chủ"><i class="fa fa-lg fa-fw fa-home"></i> <span
+                            class="menu-item-parent">Trang
                             Chủ</span></a>
                 </li>
                 <li>
-                    <a href="#" title="Hồ sơ cá nhân"><i class="fa fa-lg fa-fw fa-home"></i>
-                        <span class="">Hồ Sơ Cá Nhân</span></a>
+                    <a href="#" title="Hồ sơ cá nhân"><i class="fa fa-lg fa-fw fa-user"></i>
+                        <span class="menu-item-parent">Hồ Sơ Cá Nhân</span></a>
                 </li>
                 <li>
-                    <a href="#" title="Học tập"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span
+                    <a href="#" title="Học tập"><i class="fa fa-lg fa-fw fa-book"></i> <span
                             class="menu-item-parent">Học
                             Tập</span></a>
                     <ul>
@@ -370,11 +371,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" title="Xác nhận online"><i class="fa fa-lg fa-fw fa-inbox"></i>
+                    <a href="#" title="Xác nhận online"><i class="fa fa-lg fa-fw fa-calendar-o"></i>
                         <span class="menu-item-parent">Xác Nhận Online</span></a>
                 </li>
                 <li>
-                    <a href="#" title="Đánh giá rèn luyện"><i class="fa fa-lg fa-fw fa-table"></i> <span
+                    <a href="#" title="Đánh giá rèn luyện"><i class="fa fa-lg fa-fw fa-balance-scale"></i> <span
                             class="menu-item-parent">Đánh Giá Rèn
                             Luyện</span></a>
                     <ul>
@@ -384,7 +385,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" title="Khảo sát"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span
+                    <a href="#" title="Khảo sát"><i class="fa fa-lg fa-fw fa-calendar-check-o"></i> <span
                             class="menu-item-parent">Khảo Sát</span></a>
                     <ul>
                         <li>
@@ -393,7 +394,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" title="Hoạt Động Sinh Viên"><i class="fa fa-lg fa-fw fa-desktop"></i> <span
+                    <a href="#" title="Hoạt Động Sinh Viên"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span
                             class="menu-item-parent">Hoạt Động Sinh Viên</span></a>
                     <ul>
                         <li>
@@ -408,12 +409,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" title="Cài đặt tài khoản"><i class="fa fa-lg fa-fw fa-home"></i> <span class="">Cài đặt
-                            tài
-                            khoản</span></a>
+                    <a href="#" title="Cài đặt tài khoản"><i class="fa fa-lg fa-fw fa-cog"></i> <span
+                            class="menu-item-parent">Cài đặt tài khoản</span></a>
                 </li>
                 <li>
-                    <a href="#" title="Khác"><i class="fa fa-lg fa-fw fa-desktop"></i> <span
+                    <a href="#" title="Khác"><i class="fa fa-lg fa-fw fa-bars"></i> <span
                             class="menu-item-parent">Khác</span></a>
                     <ul>
                         <li>
@@ -422,7 +422,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-lg fa-fw fa-home" title="Hỗ Trợ"></i> <span class="">Hỗ Trợ</span></a>
+                    <a href="#"><i class="fa fa-lg fa-fw fa-phone" title="Hỗ Trợ"></i> <span class="menu-item-parent">Hỗ
+                            Trợ</span></a>
                 </li>
             </ul>
         </nav>
@@ -437,7 +438,6 @@
 
     <!-- MAIN PANEL -->
     <div id="main" role="main">
-
         <!-- RIBBON -->
         <div id="ribbon">
 
@@ -472,84 +472,106 @@
 
         <!-- MAIN CONTENT -->
         <div id="content">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Tiết</th>
-                            <th>Mã Môn Học</th>
-                            <th>Tên Môn</th>
-                            <th>Thông tin tiết học</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th colspan="4" class="background-thoi-gian">Thứ 2, ngày 20/02/2023</th>
-                        </tr>
-                        <tr>
-                            <td class="tiet-hoc">2-6</td>
-                            <td>NDF211</td>
-                            <td>Quốc Phòng An Ninh 4</td>
-                            <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
-                        </tr>
-                    </tbody>
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+                    <h1 class="page-title txt-color-blueDark">
+                        <i class="fa fa-table fa-fw "></i>
+                        Thời Khóa Biểu
+                    </h1>
+                </div>
 
-                    <tbody>
-                        <tr>
-                            <th colspan="4" class="background-thoi-gian">Thứ 4, ngày 22/02/2023</th>
-                        </tr>
-                        <tr>
-                            <td class="tiet-hoc">7-11</td>
-                            <td>CMP315</td>
-                            <td>Thực hành kỹ thuật lập trình</td>
-                            <td>Phòng: <strong>E1-10.03</strong> - Lớp: <strong>LT1_E2</strong></td>
-                        </tr>
-                    </tbody>
-
-                    <tbody>
-                        <tr>
-                            <th colspan="4" class="background-thoi-gian">Thứ 5, ngày 23/02/2023</th>
-                        </tr>
-                        <tr>
-                            <td class="tiet-hoc">1-3</td>
-                            <td>PHT307</td>
-                            <td>Bóng rổ 1</td>
-                            <td>Phòng: <strong>E1-12.03</strong> - Lớp: <strong>BR_E2</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="tiet-hoc">2-6</td>
-                            <td>NDF211</td>
-                            <td>Quốc Phòng An Ninh 4</td>
-                            <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
-                        </tr>
-                    </tbody>
-
-                    <tbody>
-                        <tr>
-                            <th colspan="4" class="background-thoi-gian">Thứ 2, ngày 20/02/2023</th>
-                        </tr>
-                        <tr>
-                            <td class="tiet-hoc">2-6</td>
-                            <td>NDF211</td>
-                            <td>Quốc Phòng An Ninh 4</td>
-                            <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
-                        </tr>
-                    </tbody>
-
-                    <tbody>
-                        <tr>
-                            <th colspan="4" class="background-thoi-gian">Thứ 2, ngày 20/02/2023</th>
-                        </tr>
-                        <tr>
-                            <td class="tiet-hoc">2-6</td>
-                            <td>NDF211</td>
-                            <td>Quốc Phòng An Ninh 4</td>
-                            <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+
+            <div class="well">
+                <div class="row">
+                    <div class="alert alert-warning fade in">
+                        <i class="fa-fw fa fa-warning"></i>
+                        <strong>Chú ý:</strong> Sinh viên thường xuyên theo dõi thời khoá biểu để sớm cập nhật thông tin
+                        mới nhất!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tiết</th>
+                                    <th>Mã Môn Học</th>
+                                    <th>Tên Môn</th>
+                                    <th>Thông tin tiết học</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th colspan="4" class="background-thoi-gian">Thứ 2, ngày 20/02/2023</th>
+                                </tr>
+                                <tr>
+                                    <td class="tiet-hoc">2-6</td>
+                                    <td>NDF211</td>
+                                    <td>Quốc Phòng An Ninh 4</td>
+                                    <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="4" class="background-thoi-gian">Thứ 4, ngày 22/02/2023</th>
+                                </tr>
+                                <tr>
+                                    <td class="tiet-hoc">7-11</td>
+                                    <td>CMP315</td>
+                                    <td>Thực hành kỹ thuật lập trình</td>
+                                    <td>Phòng: <strong>E1-10.03</strong> - Lớp: <strong>LT1_E2</strong></td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="4" class="background-thoi-gian">Thứ 5, ngày 23/02/2023</th>
+                                </tr>
+                                <tr>
+                                    <td class="tiet-hoc">1-3</td>
+                                    <td>PHT307</td>
+                                    <td>Bóng rổ 1</td>
+                                    <td>Phòng: <strong>E1-12.03</strong> - Lớp: <strong>BR_E2</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tiet-hoc">2-6</td>
+                                    <td>NDF211</td>
+                                    <td>Quốc Phòng An Ninh 4</td>
+                                    <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="4" class="background-thoi-gian">Thứ 2, ngày 20/02/2023</th>
+                                </tr>
+                                <tr>
+                                    <td class="tiet-hoc">2-6</td>
+                                    <td>NDF211</td>
+                                    <td>Quốc Phòng An Ninh 4</td>
+                                    <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="4" class="background-thoi-gian">Thứ 2, ngày 20/02/2023</th>
+                                </tr>
+                                <tr>
+                                    <td class="tiet-hoc">2-6</td>
+                                    <td>NDF211</td>
+                                    <td>Quốc Phòng An Ninh 4</td>
+                                    <td>Phòng: <strong>E1-12.02</strong> - Lớp: <strong>QP4_E1</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- END MAIN CONTENT -->
 

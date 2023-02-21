@@ -1,3 +1,7 @@
+.well {
+    padding: 30px !important;
+}
+
 .tiet-hoc {
     color: red;
     font-weight: bold;
