@@ -489,32 +489,36 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="calendar-button-left-right">
-                            <button class="btn btn-primary btn-prev"><i class="fa fa-arrow-left"></i></button>
-                            <span class="title-month-year"><strong>Tháng 2, 2023</strong></span>
-                            <button class="btn btn-primary btn-next"><i class="fa fa-arrow-right"></i></button>
+                            <button class="btn btn-primary btn-prev" onclick="buttonPrev(), getMonth()"><i
+                                    class="fa fa-arrow-left"></i></button>
+                            <span id="title-month-year" class="title-month-year"><strong>Tháng 2, 2023</strong></span>
+                            <button class="btn btn-primary btn-next" onclick="buttonNext(), getMonth()"><i
+                                    class="fa fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
 
                 <div class="row calendar-button-lich">
                     <div class="col-md-6 col-xs-6 text-right">
-                        <button>
+                        <button id="btn-lich-1">
                             <strong>2/2/2023</strong> => <strong>9/2/2023</strong>
+                            <!-- <strong id="timeBefore7days">2/2/2023</strong> => <strong
+                                id="timeAfter7days">9/2/2023</strong> -->
                         </button>
                     </div>
                     <div class="col-md-6 col-xs-6 text-left">
-                        <button>
+                        <button id="btn-lich-2">
                             <strong>10/2/2023</strong> => <strong>17/2/2023</strong>
                         </button>
                     </div>
 
                     <div class="col-md-6 col-xs-6 text-right">
-                        <button>
+                        <button id="btn-lich-3">
                             <strong>18/2/2023</strong> => <strong>25/2/2023</strong>
                         </button>
                     </div>
                     <div class="col-md-6 col-xs-6 text-left">
-                        <button>
+                        <button id="btn-lich-4">
                             <strong>26/2/2023</strong> => <strong>3/3/2023</strong>
                         </button>
                     </div>
@@ -524,7 +528,7 @@
             <div class="well">
                 <div class="row">
                     <!-- alert info -->
-                    <div class="alert alert-info fade in">
+                    <div class="alert alert-info fade in" style="margin-bottom: 5px;">
                         <i class="fa-fw fa fa-info"></i>
                         <strong>Mẹo!</strong> Bạn có thể <strong>Click</strong> vào từng <strong>tiết học</strong> để
                         xem chi tiết hơn.
@@ -644,6 +648,10 @@
     <!-- END PAGE FOOTER -->
 
     <!--================================================== -->
+
+    <!-- Tăng/Giảm tháng/năm Thời Khóa Biểu -->
+    <script src="/js/tang_giam_thang_tkb.js"></script>
+    <script src="/js/button_thoiGian.js"></script>
 
     <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
     <script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
