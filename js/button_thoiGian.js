@@ -1,69 +1,63 @@
+let lich_thang_1 = [
+    `<strong>1/1/2023</strong> => <strong>8/1/2023</strong>`,
+    `<strong>9/1/2023</strong> => <strong>16/1/2023</strong>`,
+    `<strong>17/1/2023</strong> => <strong>24/1/2023</strong>`,
+    `<strong>25/1/2023</strong> => <strong>31/1/2023</strong>`
+]
+let lich_thang_2 = [
+    `<strong>1/2/2023</strong> => <strong>8/2/2023</strong>`,
+    `<strong>9/2/2023</strong> => <strong>16/2/2023</strong>`,
+    `<strong>17/2/2023</strong> => <strong>24/2/2023</strong>`,
+    `<strong>25/2/2023</strong> => <strong>2/3/2023</strong>`
+]
+let lich_thang_3 = [
+    `<strong>3/3/2023</strong> => <strong>10/3/2023</strong>`,
+    `<strong>11/3/2023</strong> => <strong>18/3/2023</strong>`,
+    `<strong>19/3/2023</strong> => <strong>26/3/2023</strong>`,
+    `<strong>27/3/2023</strong> => <strong>3/4/2023</strong>`
+]
+let lich_thang_4 = [
+    `<strong>4/4/2023</strong> => <strong>11/4/2023</strong>`,
+    `<strong>12/4/2023</strong> => <strong>19/4/2023</strong>`,
+    `<strong>20/4/2023</strong> => <strong>27/4/2023</strong>`,
+    `<strong>28/4/2023</strong> => <strong>4/5/2023</strong>`
+]
 
-// Tìm tháng hiện tại
-function getMonth() {
-    const x = document.getElementById('title-month-year')
-    let text = x.textContent
-    let timDauCach = text.search(' ')
-    let thang = ''
-    let nam = ''
+let calendar = [
+    lich_thang_1,
+    lich_thang_2,
+    lich_thang_3,
+    lich_thang_4
+]
+
+
+function getCalenderByButton() {
     // tìm tháng
-    for (let i = timDauCach + 1; i < text.length; i++) {
-        if (text[i] == ',')
-            break;
-        thang += text[i]
+    let title_month_year = document.getElementById('title-month-year');
+    let text = title_month_year.textContent
+    let monthCurrent = ''
+    for (let i = text.search(' ') + 1; i < text.search(','); i++) {
+        monthCurrent += text[i];
     }
-    // tìm năm
-    for (let i = text.length - 4; i < text.length; i++)
-        nam += text[i]
+    console.log(monthCurrent);
+    // convert string to number
+    monthCurrent = (+monthCurrent) - 1;
 
-    // chuyển đổi sang số nguyên
-    thang = +thang
-    nam = +nam
-    ///////////////////////////////////////////////
-    let ngay_1_Before = 2;
-    let ngay_1_After = 9
-    let ngay_2_Before = 10;
-    let ngay_2_After = 17;
-    let ngay_3_Before = 18;
-    let ngay_3_After = 25;
-    let ngay_4_Before = 26;
-    let ngay_4_After = 3;
-    // Tháng 1
-    if (thang == 1) {
-        ngay_1_Before = 2;
-        ngay_1_After = 9
-        ngay_2_Before = 10;
-        ngay_2_After = 17;
-        ngay_3_Before = 18;
-        ngay_3_After = 25;
-        ngay_4_Before = 26;
-        ngay_4_After = 1;
-    }
-    if (thang == 3) {
-        ngay_1_Before = 4;
-        ngay_1_After = 11
-        ngay_2_Before = 12;
-        ngay_2_After = 19;
-        ngay_3_Before = 20;
-        ngay_3_After = 27;
-        ngay_4_Before = 28;
-        ngay_4_After = 3;
-    }
+    // GÁN vào 
+    let btn1 = document.getElementById(`lich-btn-1`);
+    btn1.innerHTML = calendar[monthCurrent][0]
 
-    // gán tháng này cho 4 button
-    const getBtn1 = document.getElementById('btn-lich-1')
-    getBtn1.innerHTML = `<strong>${ngay_1_Before}/${thang}/${nam}</strong> => <strong>${ngay_1_After}/${thang}/${nam}</strong>`
-    const getBtn2 = document.getElementById('btn-lich-2')
-    getBtn2.innerHTML = `<strong>${ngay_2_Before}/${thang}/${nam}</strong> => <strong>${ngay_2_After}/${thang}/${nam}</strong>`
-    const getBtn3 = document.getElementById('btn-lich-3')
-    getBtn3.innerHTML = `<strong>${ngay_3_Before}/${thang}/${nam}</strong> => <strong>${ngay_3_After}/${thang}/${nam}</strong>`
-    const getBtn4 = document.getElementById('btn-lich-4')
-    getBtn4.innerHTML = `<strong>${ngay_4_Before}/${thang}/${nam}</strong> => <strong>${ngay_4_After}/${thang + 1}/${nam}</strong>`
+    let btn2 = document.getElementById(`lich-btn-2`);
+    btn2.innerHTML = calendar[monthCurrent][1]
 
-    // gán ngày cho 4 button
+    let btn3 = document.getElementById(`lich-btn-3`);
+    btn3.innerHTML = calendar[monthCurrent][2]
 
-
+    let btn4 = document.getElementById(`lich-btn-4`);
+    btn4.innerHTML = calendar[monthCurrent][3]
 }
+
+
 
 
 
