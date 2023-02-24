@@ -38,27 +38,62 @@ let check = true
 //////////////////////////////////////////////////////////////
 ////////////////////// xử lý dữ liệu của table ///////////////
 /////////////////////////////////////////////////////////////
-for (let indexRow = 0; indexRow < lengthTR; indexRow++) {
 
-    // tạo thẻ tr
-    let tr = document.createElement('tr');
-    let text_tr = document.createTextNode('')
 
-    tr.appendChild(text_tr)
-    document.getElementsByTagName('tbody')[0].appendChild(tr)
+// HÀM THỰC THI
+createTagName_tr_th_td()
 
-    // thêm dữ liệu ngày tháng năm thi học kì vào đầu hàng
-    // 
-    if (indexRow === 0 && check === true) {
-        let th = document.createElement('th')
-        th.appendChild(document.createTextNode(`Học kỳ 1 - Năm học 2022-2023`))
-        tbody.getElementsByTagName('tr')[indexRow].appendChild(th)
-        check = false
-        // console.log(indexRow);
-        continue
+// thêm colspan đến tiêu đề của học kỳ - ngày tháng năm
+const addColSpan_title = tbody.getElementsByTagName('tr')[0].querySelector('th')
+addColSpan_title.setAttribute("colspan", lengthTR)
+
+
+
+
+
+
+
+
+// hàm tạo thẻ tr, th, sau đó tạo thẻ td
+function createTagName_tr_th_td() {
+    for (let indexRow = 0; indexRow < lengthTR; indexRow++) {
+
+        // tạo thẻ tr
+        create_tag_tr()
+
+        // thêm dữ liệu ngày tháng năm thi học kì vào đầu hàng
+        if (indexRow === 0 && check === true) {
+            create_tag_th(indexRow)
+            check = false
+            continue
+        }
+
+        // tạo thẻ td
+        create_tag_td(indexRow)
+
+        // lay dữ liệu của thẻ tr
+        getData(indexRow)
     }
 
-    // tạo thẻ td và thêm Số thứ tự cho mỗi thẻ td
+}
+
+// tạo thẻ tr
+function create_tag_tr() {
+    let tr = document.createElement('tr');
+    let text_tr = document.createTextNode('')
+    tr.appendChild(text_tr)
+    document.getElementsByTagName('tbody')[0].appendChild(tr)
+}
+
+// tạo thẻ th
+function create_tag_th(indexRow) {
+    let th = document.createElement('th')
+    th.appendChild(document.createTextNode(`Học kỳ 1 - Năm học 2022-2023`))
+    tbody.getElementsByTagName('tr')[indexRow].appendChild(th)
+}
+
+// tạo thẻ td
+function create_tag_td(indexRow) {
     for (let indexCol = 0; indexCol < lengthTR; indexCol++) {
 
         let td = document.createElement('td');
@@ -67,8 +102,12 @@ for (let indexRow = 0; indexRow < lengthTR; indexRow++) {
         tbody.getElementsByTagName('tr')[indexRow].appendChild(td)
         // console.log('row: ', indexRow);
     }
+}
 
-    // lay dữ liệu của thẻ tr
+// hàm lấy dữ liệu ngẫu nhiên từ hàm random, và render ra html
+function getData(indexRow) {
+
+    // lấy các phần tử có thẻ tên là 'tr'
     let theTR = tbody.getElementsByTagName('tr')
     // lấy dữ liệu tại thẻ tr này
     let dataTheTr = theTR[indexRow]
@@ -131,6 +170,3 @@ for (let indexRow = 0; indexRow < lengthTR; indexRow++) {
         }
     }
 }
-
-const setColSpan_title = tbody.getElementsByTagName('tr')[0].querySelector('th')
-setColSpan_title.setAttribute("colspan", lengthTR)
