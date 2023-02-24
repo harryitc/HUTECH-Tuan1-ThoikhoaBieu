@@ -1,0 +1,40 @@
+.well {
+    padding: 20px 30px 30px 30px !important;
+}
+
+.so-thu-tu {
+    width: 44px;
+}
+
+.ma-mon-hoc {
+    width: 91px;
+}
+
+.ten-mon {}
+
+.tin-chi {
+    width: 37px;
+}
+
+.diem-kt1,
+.diem-kt2 {
+    width: 77px;
+}
+
+.thi-l1 {
+    width: 57px;
+}
+
+.tong-ket-ch {
+    width: 62px;
+}
+
+.tong-ket-4 {
+    width: 51px;
+}
+
+.change-size {
+    margin: 0 auto !important;
+    max-width: 700px !important;
+    /* min-width: 300px !important; */
+}
