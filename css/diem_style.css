@@ -32,3 +32,9 @@
 .tong-ket-4 {
     width: 51px;
 }
+
+.change-size {
+    margin: 0 auto !important;
+    max-width: 700px !important;
+    /* min-width: 300px !important; */
+}
