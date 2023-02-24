@@ -1,4 +1,10 @@
-let month = 2, year = 2023
+
+///
+let date = new Date()
+let month = date.getMonth() + 1;
+let year = date.getFullYear()
+
+let dataOfMonth = 4
 
 // Nút giảm 1 tháng
 function buttonPrev() {
@@ -14,18 +20,21 @@ function buttonNext() {
 
 // CALLBACK giảm 1 tháng và in ra
 function decrease_Month(x) {
-    if (month === 1) {
-        month = 13
-        year--;
+    if (month - 1 === 0) {
+        alert('khong co du lieu')
+        return;
     }
-    x.innerHTML = `<strong>Tháng ${--month}, ${year}</strong>`
+    month--
+    console.log('month: ', month);
+    x.innerHTML = `<strong>Tháng ${month}, ${year}</strong>`
 }
 
 // CALLBACK tăng 1 tháng và in ra
 function increase_Month(x) {
-    if (month === 12) {
-        month = 1
-        year++;
+    if (month + 1 > dataOfMonth) {
+        alert('khong co du lieu');
+        return
     }
-    x.innerHTML = `<strong>Tháng ${++month}, ${year}</strong>`
+    month++
+    x.innerHTML = `<strong>Tháng ${month}, ${year}</strong>`
 }
