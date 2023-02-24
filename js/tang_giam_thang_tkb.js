@@ -36,6 +36,5 @@ function increase_Month(x) {
         return
     }
     month++
-    console.log('month: ', month);
     x.innerHTML = `<strong>Tháng ${month}, ${year}</strong>`
 }
