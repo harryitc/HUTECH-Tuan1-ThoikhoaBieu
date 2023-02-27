@@ -6,3 +6,23 @@
     width: 700px;
     margin: 0 auto;
 }
+
+.page-title {
+    display: block !important;
+}
+
+.alert {
+    border-right-width: 5px !important;
+}
+
+fieldset {
+    padding-top: 0px !important;
+}
+
+.smart-form .label {
+    width: 100% !important;
+}
+
+.smart-form fieldset {
+    background-color: transparent !important;
+}
