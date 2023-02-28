@@ -1,0 +1,129 @@
+@media screen and (max-width: 335px) {
+
+    #content>div:nth-child(1)>div:nth-child(2),
+    div:nth-child(3) {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .well .row .divider {
+        /* width: 100% !important; */
+        display: block !important;
+    }
+}
+
+
+.page-title {
+    display: block !important;
+}
+
+.well .row .divider {
+    display: none;
+}
+
+.alert-custom {
+    background-color: rgb(194 198 201 / 41%) !important;
+    color: #2a2a2ab5 !important;
+    border-color: #b5b5b5 !important;
+    border-right-width: 5px !important;
+}
+
+.alert h2 {
+    margin: 0;
+}
+
+fieldset {
+    padding-top: 0px !important;
+}
+
+.smart-form .label {
+    width: 100% !important;
+}
+
+.smart-form fieldset {
+    background-color: transparent !important;
+}
+
+
+tbody td {
+    vertical-align: middle !important;
+}
+
+tbody>tr>td:nth-child(1) {
+    text-align: center;
+    /* font-weight: bolder; */
+}
+
+.table-ban-can-su-lop tbody>tr:nth-child(1) {
+    color: red;
+    font-weight: bolder;
+}
+
+tbody>tr>td {
+    /* font-weight: bolder; */
+}
+
+.table-giao-vien tbody>tr:nth-child(odd) {
+    background-color: #f0f0f0;
+    /* background-color: #f1f1f1; */
+}
+
+
+tbody>tr>td:nth-child(4)>div {
+    background-image: url("../img/avatars_new/2735859.jpg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 400px 200px;
+    margin: auto;
+}
+
+.anh-1 {
+    background-position: -25px 0;
+}
+
+.anh-2 {
+    background-position: -108px 0;
+}
+
+.anh-3 {
+    background-position: -200px 0;
+}
+
+.anh-4 {
+
+    background-position: -280px 0;
+}
+
+.well .row p {
+    font-size: 15px !important;
+}
+
+
+.so-thu-tu {
+    width: 43px;
+}
+
+.ten {
+    width: 200px;
+}
+
+.chuc-vu {
+    width: 200px;
+}
+
+.avatar {
+    width: 200px;
+    /* padding-left: 42px !important; */
+}
+
+.ten-giao-vien {
+    width: 150px;
+}
+
+.panel-heading:hover {
+    background-color: #cacaca !important;
+}

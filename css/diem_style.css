@@ -33,8 +33,36 @@
     width: 51px;
 }
 
-.change-size {
+.table-2-diem-trung-binh {
     margin: 0 auto !important;
     max-width: 700px !important;
-    /* min-width: 300px !important; */
+}
+
+
+@media screen and (max-width: 586px) {
+    .responsive-mobile .table-1-diem-tat-ca {
+        display: none;
+    }
+
+    .responsive-mobile .table-2-diem-trung-binh {
+        display: none;
+    }
+
+    .responsive-mobile .table-2-diem-trung-binh__mini {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 587px) {
+    .responsive-mobile .table-1-diem-tat-ca {
+        display: block;
+    }
+
+    .responsive-mobile .table-2-diem-trung-binh {
+        display: block;
+    }
+
+    .responsive-mobile .table-2-diem-trung-binh__mini {
+        display: none;
+    }
 }
