@@ -466,13 +466,14 @@
         <!-- MAIN CONTENT -->
         <div id="content">
             <div class="row">
-
+                <!-- HEADER LỚP HỌC -->
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <h1 class="page-title txt-color-blueDark">
                         <i class="fa fa-lg fa-fw fa-graduation-cap"></i>
                         Lớp học
                     </h1>
                 </div>
+                <!-- START SELECT       -->
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                     <form action="" class="smart-form">
                         <fieldset>
@@ -480,9 +481,9 @@
                                 <label for="" class="label">Năm học</label>
                                 <label for="" class="select">
                                     <select name="" id="" class="">
-                                        <option value="1">Năm 2023</option>
-                                        <option value="2">Năm 2022</option>
-                                        <option value="3">Năm 2021</option>
+                                        <option value="1">2022 - 2023</option>
+                                        <option value="2">2021 - 2022</option>
+                                        <option value="3">2020 - 2021</option>
 
                                     </select>
                                     <i></i>
@@ -506,82 +507,222 @@
                             </section>
                     </form>
                 </div>
+                <!-- END SELECT      -->
             </div>
-            <div class="alert alert-info fade in">
-                <h2 class="text-center">Học Kỳ 1, Năm 2022 - 2023</h2>
+            <!--     BANNER  -->
+            <div class="alert alert-custom fade in">
+                <h2 class="text-center">Học Kỳ 1, Năm: 2022 - 2023</h2>
             </div>
+            <!-- END BANNER -->
+
+            <!-- THÔNG TIN VỀ LỚP HỌC CỦA HỌC KÌ ... -->
+
             <div class="well">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6 col-xs-12 col-lg-6">
                         <p><strong>Chuyên ngành: </strong><span>Công nghệ thông tin</span></p>
                         <p><strong>Lớp: </strong><span>22DTHA4</span></p>
                         <p><strong>Thành viên: </strong><span>40</span></p>
-                        <p><strong>Chức vụ lớp: </strong><span>Lớp trưởng/ không có</span></p>
-                        <p><strong>Xếp hạng: </strong><span title="hạng thứ 23 có điểm cao nhất lớp">23/40</span></p>
+                        <p><strong>Chức vụ lớp: </strong><span>Không có</span></p>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-lg-6">
+                        <p><strong>Xếp hạng: </strong><span title="hạng thứ 23 có điểm cao nhất lớp">23/40</span>
+                        </p>
+                        <p><strong>Cúp tiết: </strong><span>3</span></p>
                     </div>
                 </div>
             </div>
-            <label for="">(*) Thông tin về <strong>ban cán sự lớp</strong></label>
-            <div class="well">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th class="so-thu-tu">STT</th>
-                                <th class="ten">Tên</th>
-                                <th class="chuc-vu">Chức vụ</th>
-                                <th class="avatar">Avatar</th>
-                                <th class="Số điện thoại">Liên lạc</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr title="Lớp trưởng">
-                                <td>1</td>
-                                <td>Lê Bảo</td>
-                                <td>Lớp trưởng</td>
-                                <td>
-                                    <div class="anh-1">
+
+            <!-- KẾT THÚC VỀ THÔNG TIN CỦA HỌC KÌ ... -->
+
+            <div class="row">
+
+                <!-- THÔNG TIN VỀ BAN CÁN SỰ LỚP -->
+
+                <div class="col-lg-7 col-md-7 col-xs-12">
+                    <div class="widget-body">
+                        <div class="panel-group smart-accordion-default" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseOne" aria-expanded="false" class="collapsed"> <i
+                                                class="fa fa-lg fa-angle-down pull-right"></i> <i
+                                                class="fa fa-lg fa-angle-up pull-right"></i> <strong>(*) Thông tin về
+                                                ban
+                                                cán sự
+                                                lớp</strong></a></h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false"
+                                    style="height: 0px;">
+                                    <div class="panel-body no-padding">
+                                        <div class="table-responsive table-ban-can-su-lop">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="so-thu-tu">STT</th>
+                                                        <th class="ten">Tên</th>
+                                                        <th class="chuc-vu">Chức vụ</th>
+                                                        <th class="avatar text-center">Avatar</th>
+                                                        <th class="lien-lac">Liên lạc</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr title="Lớp trưởng">
+                                                        <td>1</td>
+                                                        <td>Lê Bảo</td>
+                                                        <td>Lớp trưởng</td>
+                                                        <td>
+                                                            <div class="anh-1">
+                                                            </div>
+                                                        </td>
+                                                        <td><strong>(+84)</strong> 123456789</td>
+                                                    </tr>
+                                                    <tr title="Lớp phó">
+                                                        <td>2</td>
+                                                        <td>Phan Trọng Huy</td>
+                                                        <td>Lớp phó</td>
+                                                        <td>
+                                                            <div class="anh-2">
+                                                            </div>
+                                                        </td>
+                                                        <td><strong>(+84)</strong> 123356729</td>
+                                                    </tr>
+                                                    <tr title="Lớp phó học tập">
+                                                        <td>3</td>
+                                                        <td>Lê Ngọc Nhữ</td>
+                                                        <td>Lớp phó (học tập)</td>
+                                                        <td>
+                                                            <div class="anh-3">
+                                                            </div>
+                                                        </td>
+                                                        <td><strong>(+84)</strong> 333456919</td>
+                                                    </tr>
+                                                    <tr title="Thủ quỹ">
+                                                        <td>4</td>
+                                                        <td>Võ Thị Ngốc Nghếck</td>
+                                                        <td>Thủ quỹ</td>
+                                                        <td>
+                                                            <div class="anh-4">
+                                                            </div>
+                                                        </td>
+                                                        <td><strong>(+84)</strong> 123456789</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </td>
-                                <td><strong>(+84)</strong> 123456789</td>
-                            </tr>
-                            <tr title="Lớp phó">
-                                <td>2</td>
-                                <td>Phan Trọng Huy</td>
-                                <td>Lớp phó</td>
-                                <td>
-                                    <div class="anh-2">
-                                    </div>
-                                </td>
-                                <td><strong>(+84)</strong> 123356729</td>
-                            </tr>
-                            <tr title="Lớp phó học tập">
-                                <td>3</td>
-                                <td>Lê Ngọc Nhữ</td>
-                                <td>Lớp phó (học tập)</td>
-                                <td>
-                                    <div class="anh-3">
-                                    </div>
-                                </td>
-                                <td><strong>(+84)</strong> 333456919</td>
-                            </tr>
-                            <tr title="Thủ quỹ">
-                                <td>4</td>
-                                <td>Võ Thị Ngốc Nghếck</td>
-                                <td>Thủ quỹ</td>
-                                <td>
-                                    <div class="anh-4">
-                                    </div>
-                                </td>
-                                <td><strong>(+84)</strong> 123456789</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+                <!-- BẢNG ĐÁNH GIÁ HỌC SINH x CỦA GIÁO VIÊN -->
+
+                <div class="col-lg-7 col-md-7 col-xs-12">
+                    <div class="widget-body">
+                        <div class="panel-group smart-accordion-default" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwo" class="collapsed"> <i
+                                                class="fa fa-lg fa-angle-down pull-right"></i> <i
+                                                class="fa fa-lg fa-angle-up pull-right"></i><strong>(*) Đánh giá của
+                                                giáo viên</strong></a></h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="table-responsive table-giao-vien">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                    <th class="so-thu-tu">STT</th>
+                                                    <th class="ten-giao-vien">Tên</th>
+                                                    <th colspan="2">
+                                                        Đánh giá
+                                                    </th>
+                                                </thead>
+                                                <tbody class="panel-collapse collapse in" id="collapseExample">
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Võ Thị Hưng</td>
+                                                        <td>Rất chăm chỉ, tích cực phát biểu.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Võ Thị Hưng</td>
+                                                        <td>Thường xuyên đi học trễ.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Võ Thị Hưng</td>
+                                                        <td>Học không tập trung.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Võ Thị Hưng</td>
+                                                        <td>Rất chăm chỉ.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- NỘI QUY -->
+
+                <div class="col-lg-7 col-md-7 col-xs-12">
+                    <div class="widget-body">
+                        <div class="panel-group smart-accordion-default" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseThree" class="collapsed"> <i
+                                                class="fa fa-lg fa-angle-down pull-right"></i> <i
+                                                class="fa fa-lg fa-angle-up pull-right"></i><strong>(*) Nội
+                                                qui</strong></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book.
+                                            It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged. It was popularised in the
+                                            1960s
+                                            with
+                                            the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently
+                                            with desktop publishing software like Aldus PageMaker including versions of
+                                            Lorem
+                                            Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
 
-
         </div>
+
+
+
 
         <!-- END MAIN CONTENT -->
     </div>

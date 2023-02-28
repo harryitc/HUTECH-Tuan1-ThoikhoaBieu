@@ -1,13 +1,19 @@
-.change-size {
-    width: 700px;
-    margin: 0 auto;
+@media screen and (max-width: 335px) {
+
+    #content>div:nth-child(1)>div:nth-child(2),
+    div:nth-child(3) {
+        width: 100%;
+    }
 }
 
 .page-title {
     display: block !important;
 }
 
-.alert {
+.alert-custom {
+    background-color: rgb(194 198 201 / 41%) !important;
+    color: #2a2a2ab5 !important;
+    border-color: #b5b5b5 !important;
     border-right-width: 5px !important;
 }
 
@@ -28,13 +34,37 @@ fieldset {
 }
 
 
+tbody td {
+    vertical-align: middle !important;
+}
+
+tbody>tr>td:nth-child(1) {
+    text-align: center;
+    /* font-weight: bolder; */
+}
+
+.table-ban-can-su-lop tbody>tr:nth-child(1) {
+    color: red;
+    font-weight: bolder;
+}
+
+tbody>tr>td {
+    /* font-weight: bolder; */
+}
+
+.table-giao-vien tbody>tr:nth-child(odd) {
+    background-color: #f0f0f0;
+    /* background-color: #f1f1f1; */
+}
+
+
 tbody>tr>td:nth-child(4)>div {
     background-image: url("../img/avatars_new/2735859.jpg");
     width: 100px;
     height: 100px;
     background-repeat: no-repeat;
     background-size: 400px 200px;
-    /* margin: auto; */
+    margin: auto;
 }
 
 .anh-1 {
@@ -69,23 +99,13 @@ tbody>tr>td:nth-child(4)>div {
 
 .avatar {
     width: 200px;
-    padding-left: 42px !important;
+    /* padding-left: 42px !important; */
 }
 
-tbody td {
-    vertical-align: middle !important;
+.ten-giao-vien {
+    width: 150px;
 }
 
-tbody>tr>td:nth-child(1) {
-    text-align: center;
-    /* font-weight: bolder; */
-}
-
-tbody>tr:nth-child(1) {
-    color: red;
-    font-weight: bolder;
-}
-
-tbody>tr>td {
-    /* font-weight: bolder; */
+.panel-heading:hover {
+    background-color: #cacaca !important;
 }
