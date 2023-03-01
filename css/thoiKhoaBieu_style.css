@@ -8,6 +8,7 @@
 
 .go-to-school {
     background-color: white;
+    cursor: pointer;
 }
 
 .go-to-school:hover {
@@ -17,13 +18,14 @@
 tbody th,
 td {
     border: 1px solid #99a0a7 !important;
-    max-width: 100px;
+    max-width: 120px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     background-color: #e5e5e5;
+    vertical-align: middle !important;
 }
 
-table tbody>tr>td:nth-child(1) {
+tbody>tr>td:nth-child(1) {
     font-weight: bolder;
 }
