@@ -1,0 +1,103 @@
+@media screen and (max-width: 767px) {
+    .reponsive-align {
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .calendar-button-lich #lich-btn-1,
+    .calendar-button-lich #lich-btn-3 {
+        float: right !important;
+    }
+
+    .calendar-button-lich #lich-btn-2,
+    .calendar-button-lich #lich-btn-4 {
+        float: left !important;
+    }
+}
+
+.well {
+    padding: 20px 30px 30px 30px !important;
+}
+
+.page-title {
+    display: block !important;
+}
+
+.tiet-hoc {
+    color: red;
+    font-weight: bold;
+}
+
+.background-thu-ngay-thang {
+    background-color: #cacaca;
+}
+
+table {
+    border-collapse: separate !important;
+    /* table-layout: fixed; */
+}
+
+.table thead th {
+    border: none !important;
+    /* text-align: center; */
+}
+
+.table tbody td {
+
+    /* font-weight: normal; */
+    cursor: pointer;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    /* white-space: pre-wrap; */
+}
+
+.calender {
+    margin-bottom: 15px;
+}
+
+/* .calendar-button-left-right {
+    margin-bottom: 15px;
+} */
+
+.calendar-button-lich div button {
+    min-width: 18rem !important;
+    margin: 5px auto;
+}
+
+.calendar-button-left-right .btn-prev {
+    float: right;
+}
+
+.calendar-button-left-right .btn-next {
+    float: left;
+}
+
+.title-month-year {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #085078 0%, #85D8CE 51%, #085078 100%);
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.7s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

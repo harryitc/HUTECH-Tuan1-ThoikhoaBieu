@@ -1,3 +1,55 @@
+@media screen and (max-width:400px) {
+    .page-title h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .page-title h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+.page-title {
+    display: block !important;
+}
+
+.page-title h2 {
+    /* border: 2px solid darkblue; */
+    /* border: 2px solid #818181; */
+    /* border: none; */
+    max-width: 400px;
+    padding: 5px;
+    margin: auto;
+    font-size: 2rem;
+    box-shadow:
+        rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3 51%, #8e9eab 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
 .well {
     padding: 20px 30px 20px 30px !important;
 }
@@ -11,7 +63,8 @@ thead th {
 }
 
 tbody td,
-tbody th {
+th {
+    max-width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
