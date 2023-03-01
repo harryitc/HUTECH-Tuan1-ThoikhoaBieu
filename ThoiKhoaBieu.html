@@ -472,101 +472,145 @@
                         Thời Khóa Biểu
                     </h1>
                 </div>
-
+            </div>
+            <!-- alert info -->
+            <div class="alert alert-info fade in" style="margin-bottom: 5px;">
+                <i class="fa-fw fa fa-info"></i>
+                <strong>Mẹo!</strong> Bạn có thể <strong>Click</strong> vào từng <strong>tiết học</strong> để
+                xem chi tiết hơn.
             </div>
 
-            <div class="container-fluid calender">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
-                        <div class="calendar-button-left-right row" style="margin-bottom: 15px;">
-                            <div class="col-md-4 col-lg-4 col-xs-3 col-sm-4">
-                                <button class="btn btn-primary btn-prev"
-                                    onclick="buttonPrev(), getCalenderByButton()"><i class="fa fa-arrow-left"></i>
-                                </button>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-xs-6 col-sm-4">
-                                <span id="title-month-year" class="title-month-year"><strong>Tháng 2,
-                                        2023</strong></span>
-                            </div>
-                            <div class="col-md-4 col-lg-4 col-xs-3 col-sm-4">
-                                <button class="btn btn-primary btn-next"
-                                    onclick="buttonNext(), getCalenderByButton()"><i class="fa fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row calendar-button-lich">
-                    <div class="col-sm-6 col-xs-12 reponsive-align">
-                        <button id="lich-btn-1" onclick="showDataTKB(1)" class="btn-grad">
-                            <strong>2/2/2023</strong> => <strong>9/2/2023</strong>
-                            <!-- <strong id="timeBefore7days">2/2/2023</strong> => <strong
-                                id="timeAfter7days">9/2/2023</strong> -->
-                        </button>
-                    </div>
-                    <div class="col-sm-6 col-xs-12 reponsive-align">
-                        <button id="lich-btn-2" onclick="showDataTKB(2)" class="btn-grad">
-                            <strong>10/2/2023</strong> => <strong>17/2/2023</strong>
-                        </button>
-                    </div>
-
-                    <div class="col-sm-6 col-xs-12 reponsive-align">
-                        <button id="lich-btn-3" onclick="showDataTKB(3)" class="btn-grad">
-                            <strong>18/2/2023</strong> => <strong>25/2/2023</strong>
-                        </button>
-                    </div>
-                    <div class="col-sm-6 col-xs-12 reponsive-align">
-                        <button id="lich-btn-4" onclick="showDataTKB(4)" class="btn-grad">
-                            <strong>26/2/2023</strong> => <strong>3/3/2023</strong>
-                        </button>
-                    </div>
-                </div>
+            <!-- alert warning -->
+            <div class="alert alert-warning fade in">
+                <i class="fa-fw fa fa-warning"></i>
+                <strong>Chú ý:</strong> Sinh viên thường xuyên theo dõi thời khoá biểu để sớm cập nhật thông tin
+                mới nhất!
             </div>
 
             <div class="well">
                 <div class="row">
-                    <!-- alert info -->
-                    <div class="alert alert-info fade in" style="margin-bottom: 5px;">
-                        <i class="fa-fw fa fa-info"></i>
-                        <strong>Mẹo!</strong> Bạn có thể <strong>Click</strong> vào từng <strong>tiết học</strong> để
-                        xem chi tiết hơn.
-                    </div>
-
-                    <!-- alert warning -->
-                    <div class="alert alert-warning fade in">
-                        <i class="fa-fw fa fa-warning"></i>
-                        <strong>Chú ý:</strong> Sinh viên thường xuyên theo dõi thời khoá biểu để sớm cập nhật thông tin
-                        mới nhất!
-                    </div>
-                </div>
-                <div class="row">
                     <div class=" table-responsive">
-                        <table class="table table-hover">
+                        <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>Tiết</th>
-                                    <th>Mã Môn Học</th>
-                                    <th>Tên Môn</th>
-                                    <th>Thông tin tiết học</th>
+                                    <th>Tiết/ Thứ</th>
+                                    <th>Thứ 2</th>
+                                    <th>Thứ 3</th>
+                                    <th>Thứ 4</th>
+                                    <th>Thứ 5</th>
+                                    <th>Thứ 6</th>
+                                    <th>Thứ 7</th>
+                                    <th>Chủ nhật</th>
                                 </tr>
                             </thead>
-                            <tbody class="tbody-thu-ngay-thang">
-                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>Tiết 1 <div>6:45 - 7h15</div>
+                                    </td>
+                                    <th class="go-to-school" rowspan="3" title="Bóng rổ 1">Bóng rổ 1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 2 <div>7:15 - 8:00</div>
+                                    </td>
+                                    <th rowspan="5" class="go-to-school" title="Tiếng anh 2">Tiếng anh 2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <th rowspan="5" class="go-to-school" title="Quốc phòng, an ninh 4">Quốc phòng, an
+                                        ninh 4</th>
+                                    <td></td>
+                                    <td></td>
 
-                            <tbody class="tbody-thu-ngay-thang">
-                            </tbody>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 3 <div>8:00 - 8:45</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
 
-                            <tbody class="tbody-thu-ngay-thang">
-                            </tbody>
-
-                            <tbody class="tbody-thu-ngay-thang">
-                            </tbody>
-
-                            <tbody class="tbody-thu-ngay-thang">
-                            </tbody>
-
-                            <tbody class="tbody-thu-ngay-thang">
+                                </tr>
+                                <tr>
+                                    <td>Tiết 4 <div>9:00 - 9:45</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <th rowspan="3" class="go-to-school" title="Kiểm tra bóng rổ 1"><span
+                                            style="color: red;">Kiểm tra</span> bóng
+                                        rổ 1</th>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 5 <div>9:45 - 10:30</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 6 <div>10:30 - 11:45</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 7 <div>12:30 - 13:15</div>
+                                    </td>
+                                    <th rowspan="5" class="go-to-school" title="Thực hành kỹ thuật lập trình">Thực hành
+                                        kỹ thuật lập trình</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <th rowspan="5" class="go-to-school" title="Toán cao cấp">Toán cao cấp</th>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 8 <div>13:15 - 14:00</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 9 <div>14:00 - 14:45</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 10 <div>15:00 - 15:45</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Tiết 11 <div>15:45 - 16:30</div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -575,38 +619,6 @@
 
         </div>
         <!-- END MAIN CONTENT -->
-
-        <!-- MODAL SHOW CHI TIẾT CỦA TIẾT HỌC -->
-        <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true" style="display: none;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            ×
-                        </button> -->
-                        <h4 class="modal-title text-center" id="myModalLabel">heading-title</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p id="modal-body__lop"></p>
-                        <p id="modal-body__phongHoc"></p>
-                        <p id="modal-body__thu"></p>
-                        <p id="modal-body__tietHoc"></p>
-                        <p id="modal-body__giangVien"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            Cancel
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                            Post Article
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div>
-
-        <!-- KẾT THÚC SHOW MODAL -->
 
     </div>
     <!-- END MAIN PANEL -->
@@ -629,10 +641,6 @@
     <!-- END PAGE FOOTER -->
 
     <!--================================================== -->
-
-    <!-- Tăng/Giảm tháng/năm Thời Khóa Biểu -->
-    <script src="/js/tang_giam_thang_tkb.js"></script>
-    <script src="/js/xuLyClick.js"></script>
 
     <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
     <script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
