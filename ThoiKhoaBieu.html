@@ -12,7 +12,7 @@
     <!-- #CSS Links -->
 
     <!-- My styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/thoiKhoaBieu_style.css">
 
     <!-- Basic Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
@@ -477,38 +477,47 @@
 
             <div class="container-fluid calender">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="calendar-button-left-right">
-                            <button class="btn btn-primary btn-prev" onclick="buttonPrev(), getCalenderByButton()"><i
-                                    class="fa fa-arrow-left"></i></button>
-                            <span id="title-month-year" class="title-month-year"><strong>Tháng 2, 2023</strong></span>
-                            <button class="btn btn-primary btn-next" onclick="buttonNext(), getCalenderByButton()"><i
-                                    class="fa fa-arrow-right"></i></button>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center">
+                        <div class="calendar-button-left-right row" style="margin-bottom: 15px;">
+                            <div class="col-md-4 col-lg-4 col-xs-3 col-sm-4">
+                                <button class="btn btn-primary btn-prev"
+                                    onclick="buttonPrev(), getCalenderByButton()"><i class="fa fa-arrow-left"></i>
+                                </button>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xs-6 col-sm-4">
+                                <span id="title-month-year" class="title-month-year"><strong>Tháng 2,
+                                        2023</strong></span>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xs-3 col-sm-4">
+                                <button class="btn btn-primary btn-next"
+                                    onclick="buttonNext(), getCalenderByButton()"><i class="fa fa-arrow-right"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row calendar-button-lich">
-                    <div class="col-sm-6 col-xs-12 reponsive-align" style="text-align: right;">
-                        <button id="lich-btn-1" onclick="showDataTKB(1)">
+                    <div class="col-sm-6 col-xs-12 reponsive-align">
+                        <button id="lich-btn-1" onclick="showDataTKB(1)" class="btn-grad">
                             <strong>2/2/2023</strong> => <strong>9/2/2023</strong>
                             <!-- <strong id="timeBefore7days">2/2/2023</strong> => <strong
                                 id="timeAfter7days">9/2/2023</strong> -->
                         </button>
                     </div>
-                    <div class="col-sm-6 col-xs-12 reponsive-align" style="text-align: left;">
-                        <button id="lich-btn-2" onclick="showDataTKB(2)">
+                    <div class="col-sm-6 col-xs-12 reponsive-align">
+                        <button id="lich-btn-2" onclick="showDataTKB(2)" class="btn-grad">
                             <strong>10/2/2023</strong> => <strong>17/2/2023</strong>
                         </button>
                     </div>
 
-                    <div class="col-sm-6 col-xs-12 reponsive-align" style="text-align: right;">
-                        <button id="lich-btn-3" onclick="showDataTKB(3)">
+                    <div class="col-sm-6 col-xs-12 reponsive-align">
+                        <button id="lich-btn-3" onclick="showDataTKB(3)" class="btn-grad">
                             <strong>18/2/2023</strong> => <strong>25/2/2023</strong>
                         </button>
                     </div>
-                    <div class="col-sm-6 col-xs-12 reponsive-align" style="text-align: left;">
-                        <button id="lich-btn-4" onclick="showDataTKB(4)">
+                    <div class="col-sm-6 col-xs-12 reponsive-align">
+                        <button id="lich-btn-4" onclick="showDataTKB(4)" class="btn-grad">
                             <strong>26/2/2023</strong> => <strong>3/3/2023</strong>
                         </button>
                     </div>

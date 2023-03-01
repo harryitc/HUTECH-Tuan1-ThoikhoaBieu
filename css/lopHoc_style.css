@@ -10,8 +10,19 @@
 @media screen and (max-width: 767px) {
 
     .well .row .divider {
-        /* width: 100% !important; */
         display: block !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .page-title h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .page-title h2 {
+        font-size: 1.5rem !important;
     }
 }
 
@@ -20,19 +31,42 @@
     display: block !important;
 }
 
+.page-title h2 {
+
+    max-width: 400px;
+    padding: 5px;
+    margin: auto;
+    font-size: 2rem;
+    box-shadow:
+        rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3 51%, #8e9eab 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
 .well .row .divider {
     display: none;
-}
-
-.alert-custom {
-    background-color: rgb(194 198 201 / 41%) !important;
-    color: #2a2a2ab5 !important;
-    border-color: #b5b5b5 !important;
-    border-right-width: 5px !important;
-}
-
-.alert h2 {
-    margin: 0;
 }
 
 fieldset {
@@ -54,7 +88,6 @@ tbody td {
 
 tbody>tr>td:nth-child(1) {
     text-align: center;
-    /* font-weight: bolder; */
 }
 
 .table-ban-can-su-lop tbody>tr:nth-child(1) {
@@ -62,13 +95,9 @@ tbody>tr>td:nth-child(1) {
     font-weight: bolder;
 }
 
-tbody>tr>td {
-    /* font-weight: bolder; */
-}
 
 .table-giao-vien tbody>tr:nth-child(odd) {
     background-color: #f0f0f0;
-    /* background-color: #f1f1f1; */
 }
 
 
@@ -117,7 +146,6 @@ tbody>tr>td:nth-child(4)>div {
 
 .avatar {
     width: 200px;
-    /* padding-left: 42px !important; */
 }
 
 .ten-giao-vien {
