@@ -2,19 +2,28 @@
     padding: 20px 30px 30px 30px !important;
 }
 
+.page-title {
+    display: block !important;
+}
+
 .go-to-school {
-    background-color: #e5e5e5;
+    background-color: white;
 }
 
 .go-to-school:hover {
     background-color: rgb(231, 241, 245);
 }
 
-table th,
+tbody th,
 td {
     border: 1px solid #99a0a7 !important;
     max-width: 100px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    background-color: #e5e5e5;
+}
+
+table tbody>tr>td:nth-child(1) {
+    font-weight: bolder;
 }
