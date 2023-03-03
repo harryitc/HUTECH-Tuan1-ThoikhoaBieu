@@ -514,8 +514,17 @@
                 <h2 class="text-center btn-grad">Học Kỳ 1, Năm: 2022 - 2023</h2>
             </div>
             <!-- END BANNER -->
+
             <div class="alert alert-info fade in">
-                <strong>Lưu ý: </strong>Cần để ý các ký hiệu <strong style="color: red;">(&#8727)</strong> này
+                <i class="fa-fw fa fa-info"></i>
+                <strong>Mẹo! </strong>nhấn vào số điện thoại là đã <strong>copy</strong> được rồi.
+            </div>
+
+            <div class="alert alert-warning fade in">
+                <i class="fa-fw fa fa-warning"></i>
+                <strong>Chú ý: </strong>Có biểu tượng <strong style="color: red;">(&#8727)</strong>
+                này. Đồng nghĩa, <strong>tín chỉ</strong> của bạn chưa được hoàn thành. Để biết thêm thông tin, nhấn
+                vào <strong>nút</strong> đã được cấp bên cạnh.
             </div>
             <!-- THÔNG TIN VỀ LỚP HỌC CỦA HỌC KÌ ... -->
             <!-- HIỂN THỊ THÔNG TIN VỀ LỚP HỌC -->
@@ -525,9 +534,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <p><strong>Chuyên ngành: </strong><span>Công nghệ thông tin</span></p>
                         <p><strong>Lớp: </strong><span>22DTHA4</span></p>
-                        <p><strong>Thành viên: </strong><span>40</span></p>
-                        <p><strong>Số tín chỉ: </strong><span>10</span></p>
-
+                        <p><strong>Chức vụ lớp: </strong><span>Không có</span></p>
                     </div>
 
                     <div class="col-xs-12 divider">
@@ -535,13 +542,19 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <p><strong>Xếp hạng: </strong><span title="hạng thứ 23/40 có điểm cao nhất lớp">23</span>
+                        <p><strong>Xếp hạng: </strong><span rel="tooltip" data-placement="top"
+                                data-original-title="Hạng thứ 23 có điểm cao nhất lớp"
+                                aria-describedby="tooltipID">23</span>
                         </p>
                         <p><strong>Nghỉ học: </strong><span>3</span></p>
-                        <p><strong>Chức vụ lớp: </strong><span>Không có</span></p>
-                        <p><strong>Tín chỉ đạt được: </strong><span>9</span><strong
-                                title="Lưu ý: Còn 1 tín chỉ chưa học" style="color: red;">
-                                (&#8727)</strong></p>
+                        <p><strong>Tín chỉ đạt được: </strong><span rel="tooltip" data-placement="top"
+                                data-original-title="Lưu ý: Còn 1 tín chỉ chưa học"
+                                aria-describedby="tooltipID">7/10</span><strong style="color: red;">
+                                (&#8727)
+                            </strong>
+                            <i class="fa fa-fw fa-eye" data-toggle="modal" data-target="#myModal1"
+                                style="cursor: pointer;" title="Nhấn vào để xem thông tin"></i>
+                        </p>
                     </div>
 
                 </div>
@@ -587,7 +600,7 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr title="Lớp trưởng">
+                                                        <tr>
                                                             <td>1</td>
                                                             <td>Lê Bảo</td>
                                                             <td>Lớp trưởng</td>
@@ -595,9 +608,16 @@
                                                                 <div class="anh-1">
                                                                 </div>
                                                             </td>
-                                                            <td><strong>(+84)</strong> 123456789</td>
+                                                            <td>
+                                                                <p id="phone-1" rel="tooltip" data-placement="top"
+                                                                    data-original-title="số điện thoại"
+                                                                    aria-describedby="tooltip-tin-chi"
+                                                                    onclick="copyPhone(id)">
+                                                                    <strong>(+84)</strong> 123456789
+                                                                </p>
+                                                            </td>
                                                         </tr>
-                                                        <tr title="Lớp phó">
+                                                        <tr>
                                                             <td>2</td>
                                                             <td>Phan Trọng Huy</td>
                                                             <td>Lớp phó</td>
@@ -605,9 +625,16 @@
                                                                 <div class="anh-2">
                                                                 </div>
                                                             </td>
-                                                            <td><strong>(+84)</strong> 123356729</td>
+                                                            <td>
+                                                                <p id="phone-2" rel="tooltip" data-placement="top"
+                                                                    data-original-title="số điện thoại"
+                                                                    aria-describedby="tooltip-tin-chi"
+                                                                    onclick="copyPhone(id)">
+                                                                    <strong>(+84)</strong> 123356729
+                                                                </p>
+                                                            </td>
                                                         </tr>
-                                                        <tr title="Lớp phó học tập">
+                                                        <tr>
                                                             <td>3</td>
                                                             <td>Lê Ngọc Nhữ</td>
                                                             <td>Lớp phó (học tập)</td>
@@ -615,9 +642,16 @@
                                                                 <div class="anh-3">
                                                                 </div>
                                                             </td>
-                                                            <td><strong>(+84)</strong> 333456919</td>
+                                                            <td>
+                                                                <p id="phone-3" rel="tooltip" data-placement="top"
+                                                                    data-original-title="số điện thoại"
+                                                                    aria-describedby="tooltip-tin-chi"
+                                                                    onclick="copyPhone(id)">
+                                                                    <strong>(+84)</strong> 333456919
+                                                                </p>
+                                                            </td>
                                                         </tr>
-                                                        <tr title="Thủ quỹ">
+                                                        <tr>
                                                             <td>4</td>
                                                             <td>Võ Thị Ngốc Nghếck</td>
                                                             <td>Thủ quỹ</td>
@@ -625,7 +659,14 @@
                                                                 <div class="anh-4">
                                                                 </div>
                                                             </td>
-                                                            <td><strong>(+84)</strong> 123456789</td>
+                                                            <td>
+                                                                <p id="phone-4" rel="tooltip" data-placement="top"
+                                                                    data-original-title="số điện thoại"
+                                                                    aria-describedby="tooltip-tin-chi"
+                                                                    onclick="copyPhone(id)">
+                                                                    <strong>(+84)</strong> 333456919
+                                                                </p>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -698,58 +739,14 @@
                     </div>
                 </div>
 
-                <!-- NỘI QUY -->
-                <!-- 
-                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6" style="margin: auto;">
-                    <div class="widget-body">
-                        <div class="panel-group smart-accordion-default" id="accordion3">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3"
-                                            href="#collapseThree" class="collapsed"> <i
-                                                class="fa fa-lg fa-angle-down pull-right"></i> <i
-                                                class="fa fa-lg fa-angle-up pull-right"></i><strong>(&#8727) Nội
-                                                quy</strong></a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                            an
-                                            unknown printer took a galley of type and scrambled it to make a type
-                                            specimen
-                                            book.
-                                            It has survived not only five centuries, but also the leap into electronic
-                                            typesetting, remaining essentially unchanged. It was popularised in the
-                                            1960s
-                                            with
-                                            the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                            recently
-                                            with desktop publishing software like Aldus PageMaker including versions of
-                                            Lorem
-                                            Ipsum.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div> -->
-
-
+                <!-- KẾT THÚC 2 BẢNG -->
             </div>
-            <!-- KẾT THÚC 3 BẢNG -->
+
+            <!-- END MAIN CONTENT -->
         </div>
+        <!-- END MAIN PANEL -->
 
-
-
-
-        <!-- END MAIN CONTENT -->
     </div>
-    <!-- END MAIN PANEL -->
 
     <!-- PAGE FOOTER -->
     <div class="page-footer">
@@ -768,9 +765,50 @@
     </div>
     <!-- END PAGE FOOTER -->
 
+    <!-- Tooltip -->
+
+    <div class="tooltip fade top in" role="tooltip" id="tooltipID"
+        style="top: 165.297px; left: 296.797px; display: none;">
+        <div class="tooltip-arrow" style="left: 50%;"></div>
+        <div class="tooltip-inner">Tooltip Top</div>
+    </div>
+
+    <!-- SHOW MODAL -->
+
+    <div class="modal fade in" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true" style="display: none; padding-right: 17px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Thông tin chi tiết</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center">Học phần bị thiếu</h1>
+                            <ol type="1">
+                                <li>Triết học</li>
+                                <li>Tâm lý học</li>
+                                <li>Ngôn ngữ Anh</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
 
 
     <!--================================================== -->
+
+    <script src="/js/lopHoc.js"></script>
+
 
     <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
     <script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
